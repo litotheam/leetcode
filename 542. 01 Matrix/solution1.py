@@ -17,8 +17,9 @@ class Solution:
                         result[i][j] = min(result[i][j], result[i][j-1] + 1)
         
         i = rows_num - 1
-        j = cols_num - 1
+        
         while(i >= 0):
+            j = cols_num - 1
             while(j >= 0):
 
                 if i < rows_num - 1:
@@ -35,3 +36,5 @@ if __name__ == '__main__':
     sol = Solution()
     mat1 = [[0,0,0],[0,1,0],[0,0,0]]
     print(sol.updateMatrix(mat1))
+    mat2 = [[0,1,0,1,1],[1,1,0,0,1],[0,0,0,1,0],[1,0,1,1,1],[1,0,0,0,1]]
+    print(sol.updateMatrix(mat2))
