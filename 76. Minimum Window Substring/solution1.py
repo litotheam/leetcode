@@ -20,7 +20,7 @@ class Solution:
             output = ""
         else:
             for right in range(m):
-                if s[right] not in dict_s:
+                if s[right] not in dict_s: 
                     dict_s[s[right]] = 1
                 else:
                     dict_s[s[right]] += 1
